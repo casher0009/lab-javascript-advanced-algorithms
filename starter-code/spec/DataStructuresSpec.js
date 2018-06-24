@@ -3,44 +3,44 @@ describe("Stack", function() {
 
   beforeEach (function() {
     stack = new StackDataStructure();
-  });
+  });//pass
 
   describe ("Stack properties", function () {
     it ("Should has an array to add the elements to the stack", function () {
       expect(Array.isArray(stack.stackControl)).toBe(true);
-    });
+    });//pass
 
     it ("Should has a max number of items to avoid the stack overflow", function () {
       expect(typeof(stack.MAX_SIZE)).toBe('number');
-    });
+    });//pass
   });
 
   describe ("Stack methods", function () {
     it ("Should has a method to check if the current stack is empty", function () {
       expect(typeof(stack.isEmpty)).toBe('function');
-    });
+    });//pass
 
     it ("Should has a method to check if we can push elements into the stack", function () {
       expect(typeof(stack.canPush)).toBe('function');
-    });
+    });//pass
 
     it ("Should has a method to push elements into the stack", function () {
       expect(typeof(stack.push)).toBe('function');
-    });
+    });//pass
 
     it ("Should has a method to take elements from the stack", function () {
       expect(typeof(stack.pop)).toBe('function');
-    });
+    });//pass
   });
 
   describe ("Stack methods default values", function () {
     it ("Should has an empty stack", function () {
       expect(stack.isEmpty()).toBe(true);
-    });
+    });//pass
 
     it ("Should be able to add a new element in the stack", function () {
       expect(stack.canPush()).toBe(true);
-    });
+    });//pass
   });
 
   describe ("Stack methods usage", function () {
